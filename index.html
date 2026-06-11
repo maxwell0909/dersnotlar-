@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Bilgi ve Ders Notları Portalı</title>
+    <style>
+        /* Genel Tasarım Ayarları */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Bölüm Kartları */
+        .section-card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .section-card h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Liste Tasarımları */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        /* Link Tasarımları */
+        .resource-link {
+            color: #34495e;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .resource-link:hover {
+            color: #e74c3c;
+        }
+
+        .badge {
+            background-color: #e74c3c;
+            color: white;
+            padding: 2px 6px;
+            font-size: 11px;
+            border-radius: 4px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Başlık Alanı -->
+    <header>
+        <h1>Ders Notları & Kaynak Paylaşım Portalı</h1>
+        <p>Başarı, disiplinli çalışmanın ürünüdür.</p>
+    </header>
+
+    <!-- Ana İçerik Konteyneri -->
+    <div class="container">
+
+        <!-- Duyurular Bölümü -->
+        <div class="section-card">
+            <h2>📢 Güncel Duyurular</h2>
+            <ul>
+                <li>
+                    <strong>Haftalık Deneme Analizi:</strong> Hafta sonu çözdüğünüz branş denemelerinin analizlerini eksiksiz tamamlamayı unutmayın.
+                </li>
+                <li>
+                    <strong>Soru Bankası Ödevleri:</strong> Hatalı veya boş bıraktığınız konuların soru çözüm videolarını mutlaka izleyin.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Ders Notları Bölümü -->
+        <div class="section-card">
+            <h2>📚 Ders Notları (PDF)</h2>
+            <p>Konu tekrarlarınızı yaparken bu özet notlardan yararlanabilirsiniz:</p>
+            <ul>
+                <li>
+                    <a href="notlar/temel-kavramlar.pdf" class="resource-link" target="_blank">📄 Ders Notu 1: Temel Kavramlar ve Özetler</a>
+                    <span class="badge">Yeni</span>
+                </li>
+                <li>
+                    <a href="notlar/konu-2-ozet.pdf" class="resource-link" target="_blank">📄 Ders Notu 2: Detaylı Konu Anlatım Föyü</a>
+                </li>
+                <li>
+                    <a href="notlar/formuller-tablosu.pdf" class="resource-link" target="_blank">📄 Formüller ve Pratik Hatırlatma Tablosu</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Faydalı Linkler Bölümü -->
+        <div class="section-card">
+            <h2>🔗 Önemli ve Faydalı Linkler</h2>
+            <p>Sınav hazırlık sürecinde ve ders dışı araştırmalarınızda kullanabileceğiniz bağlantılar:</p>
+            <ul>
+                <li>
+                    <a href="https://www.tdk.gov.tr" class="resource-link" target="_blank">🌐 TDK Güncel Yazım Kılavuzu</a>
+                    <p style="margin: 5px 0 0 0; font-size: 13px; color: #7f8c8d;">Yazım kuralları çalışmalarında resmi güncel kaynak.</p>
+                </li>
+                <li>
+                    <a href="https://ogmmateryal.eba.gov.tr/" class="resource-link" target="_blank">🌐 MEB OGM Materyal Portalı</a>
+                    <p style="margin: 5px 0 0 0; font-size: 13px; color: #7f8c8d;">Bakanlığın interaktif soru ve konu özetleri havuzu.</p>
+                </li>
+                <li>
+                    <a href="#" class="resource-link" target="_blank">🌐 Çevrimiçi Soru Çözüm Platformu</a>
+                    <p style="margin: 5px 0 0 0; font-size: 13px; color: #7f8c8d;">Takıldığınız soruları analiz edebileceğiniz sistem.</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Sayfa Alt Bilgisi -->
+    <footer>
+        <p>&copy; 2026 - Ders Paylaşım Platformu | Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
