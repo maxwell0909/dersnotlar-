@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Öğrenci Bilgi ve Ders Notları Portaları</title>
+    <title>Öğrenci Bilgi ve Ders Notları Portalı</title>
     <style>
         /* Genel Tasarım Ayarları */
         body {
@@ -57,18 +57,6 @@
             margin-bottom: 15px;
         }
 
-        /* Kurallar Listesi */
-        .rules-list {
-            padding-left: 20px;
-            margin: 10px 0 0 0;
-        }
-
-        .rules-list li {
-            padding: 4px 0;
-            border-bottom: none;
-            font-size: 14px;
-        }
-
         /* Sınıf Kartları Düzeni (Grid) */
         .class-grid {
             display: grid;
@@ -107,39 +95,20 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 80%;
+            width: 85%;
             background-color: #3498db;
             color: white;
             text-decoration: none;
-            padding: 10px;
+            padding: 12px 10px;
             font-weight: bold;
             border-radius: 6px;
             font-size: 15px;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s, transform 0.2s;
         }
 
         .folder-btn:hover {
             background-color: #2980b9;
-        }
-
-        /* Form Link Butonu */
-        .form-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            background-color: #673ab7;
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            font-weight: bold;
-            border-radius: 6px;
-            font-size: 15px;
-            transition: background-color 0.2s;
-        }
-
-        .form-btn:hover {
-            background-color: #512da8;
+            transform: translateY(-2px);
         }
 
         /* Footer */
@@ -168,49 +137,36 @@
             <p style="color: #7f8c8d; font-style: italic; margin-top: 10px; margin-bottom: 0;">Şu an aktif bir duyuru bulunmamaktadır.</p>
         </div>
 
-        <!-- Ödev Kuralları Bölümü -->
-        <div class="section-card" style="border-left: 5px solid #673ab7;">
-            <h2>📝 Ödev & Fotoğraf Gönderim Kuralları</h2>
-            <p style="margin-bottom: 5px; font-weight: bold; color: #e74c3c;">Lütfen dosya yüklemeden önce aşağıdaki kurallara kesinlikle uyunuz:</p>
-            <ul class="rules-list">
-                <li>👤 Formun ilgili alanlarına <strong>isminizi, soyisminizi ve okul numaranızı</strong> eksiksiz giriniz.</li>
-                <li>🎯 Yüklediğiniz fotoğraf veya PDF'lerde <strong>okul numaranız her resmin tam ortasında, belirgin ve okunaklı bir şekilde</strong> yazılı olmalıdır.</li>
-            </ul>
-        </div>
-
-        <!-- Ders Notları ve Gönderim Bölümü -->
+        <!-- Ders Notları Bölümü -->
         <div class="section-card">
-            <h2>📚 2025-2026 Ders Notları ve Alanlar</h2>
+            <h2>📚 2025-2026 Ders Notları</h2>
+            <p style="color: #7f8c8d; font-size: 14px; margin-top: -5px; margin-bottom: 15px;">Ders notlarına ve kaynaklara erişmek için kendi sınıf seviyenize tıklayınız:</p>
             
-            <!-- Her Sınıf İçin İkili Buton Yapısı -->
+            <!-- Her Sınıf İçin Buton Yapısı -->
             <div class="class-grid">
                 
                 <!-- 9. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">9. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
-                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                    <a href="https://drive.google.com/drive/folders/1gOj4aEaiDER4fa35042ECjNfAD1iLsJW?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
                 <!-- 10. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">10. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
-                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                    <a href="https://drive.google.com/drive/folders/1VUh4SsCgsWXh48u7juRSKCBmGd12R4kW?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
                 <!-- 11. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">11. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
-                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                    <a href="https://drive.google.com/drive/folders/1_l1A0zp1AhRk8pl50aLBT2GVgXWmcPka?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
                 <!-- 12. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">12. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
-                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                    <a href="https://drive.google.com/drive/folders/1OUm9S7T5IeuhR9GpZNyAfNKpRm2zLwJN?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
             </div>
