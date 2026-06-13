@@ -71,7 +71,7 @@
             }
         }
 
-        /* Sınıf Konteyner Kutusu */
+        /* Konteyner Kutuları (Sınıf ve Kitap için ortak) */
         .class-card-box {
             background-color: #f8f9fa;
             border: 2px solid #e9ecef;
@@ -90,7 +90,12 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
-        /* Klasör Link Butonu */
+        /* Kitap Kartı Özel Hover Rengi */
+        .books-card-box:hover {
+            border-color: #e67e22;
+        }
+
+        /* Klasör Link Butonları */
         .folder-btn {
             display: inline-flex;
             align-items: center;
@@ -109,6 +114,15 @@
         .folder-btn:hover {
             background-color: #2980b9;
             transform: translateY(-2px);
+        }
+
+        /* Kitap Butonu Özel Rengi (Turuncu) */
+        .book-btn {
+            background-color: #e67e22;
+        }
+
+        .book-btn:hover {
+            background-color: #d35400;
         }
 
         /* Footer */
@@ -139,36 +153,47 @@
 
         <!-- Ders Notları Bölümü -->
         <div class="section-card">
-            <h2>📚 2025-2026 Ders Notları</h2>
+            <h2>📂 2025-2026 Ders Notları</h2>
             <p style="color: #7f8c8d; font-size: 14px; margin-top: -5px; margin-bottom: 15px;">Ders notlarına ve kaynaklara erişmek için kendi sınıf seviyenize tıklayınız:</p>
             
-            <!-- Her Sınıf İçin Buton Yapısı -->
             <div class="class-grid">
-                
                 <!-- 9. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">9. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1gOj4aEaiDER4fa35042ECjNfAD1iLsJW?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8gov4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
                 <!-- 10. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">10. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1VUh4SsCgsWXh48u7juRSKCBmGd12R4kW?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8gov4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
                 <!-- 11. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">11. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1_l1A0zp1AhRk8pl50aLBT2GVgXWmcPka?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8gov4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
 
                 <!-- 12. Sınıf -->
                 <div class="class-card-box">
                     <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">12. Sınıf</span>
-                    <a href="https://drive.google.com/drive/folders/1OUm9S7T5IeuhR9GpZNyAfNKpRm2zLwJN?usp=drive_link" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8gov4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notlarını Görüntüle</a>
                 </div>
+            </div>
+        </div>
 
+        <!-- Kaynak Kitaplar Bölümü -->
+        <div class="section-card">
+            <h2>📚 Kaynak Kitaplar Arşivi</h2>
+            <p style="color: #7f8c8d; font-size: 14px; margin-top: -5px; margin-bottom: 15px;">Yardımcı kaynaklara, soru bankalarına ve dijital kitaplara buradan ulaşabilirsiniz:</p>
+            
+            <div class="class-grid" style="grid-template-columns: 1fr;">
+                <!-- Kitaplar Tekli Geniş Buton -->
+                <div class="class-card-box books-card-box" style="padding: 25px;">
+                    <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">Tüm Sınıflar İçin Dijital Kitaplar</span>
+                    <a href="https://drive.google.com/drive/folders/1h3B-8udFC40jVb9Ju0Fv1MdIPX8XRD16?usp=drive_link" target="_blank" class="folder-btn book-btn">📚 Kitap Arşivini Görüntüle</a>
+                </div>
             </div>
         </div>
 
