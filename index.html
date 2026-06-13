@@ -69,39 +69,89 @@
             text-decoration: underline;
         }
 
-        /* Sınıf Klasörleri / Butonları */
+        /* Kurallar Listesi */
+        .rules-list {
+            padding-left: 20px;
+            margin: 10px 0 0 0;
+        }
+
+        .rules-list li {
+            padding: 4px 0;
+            border-bottom: none;
+            font-size: 14px;
+        }
+
+        /* Sınıf Kartları Düzeni (Grid) */
         .class-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            grid-template-columns: 1fr;
+            gap: 15px;
             margin-top: 15px;
         }
 
         @media (min-width: 600px) {
             .class-grid {
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        .class-box {
+        /* Sınıf Konteyner Kutusu */
+        .class-card-box {
             background-color: #f8f9fa;
             border: 2px solid #e9ecef;
-            border-radius: 6px;
-            padding: 15px 10px;
-            text-align: center;
-            text-decoration: none;
-            color: #495057;
-            font-weight: bold;
-            font-size: 16px;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
             transition: all 0.2s ease;
         }
 
-        .class-box:hover {
-            background-color: #3498db;
+        .class-card-box:hover {
             border-color: #3498db;
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Klasör Link Butonu */
+        .folder-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .folder-btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Form Link Butonu */
+        .form-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+            background-color: #673ab7;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: background-color 0.2s;
+        }
+
+        .form-btn:hover {
+            background-color: #512da8;
         }
 
         /* Footer */
@@ -115,31 +165,72 @@
 </head>
 <body>
 
+    <!-- Başlık Alanı -->
     <header>
         <h1>Ders Notları & Kaynak Paylaşım Portalı</h1>
         <p>Başarı, disiplinli çalışmanın ürünüdür.</p>
     </header>
 
+    <!-- Ana İçerik Konteyneri -->
     <div class="container">
 
+        <!-- Duyurular Bölümü -->
         <div class="section-card">
             <h2>📢 Güncel Duyurular</h2>
             <p style="color: #7f8c8d; font-style: italic; margin-top: 10px; margin-bottom: 0;">Şu an aktif bir duyuru bulunmamaktadır.</p>
         </div>
 
+        <!-- Ödev Kuralları Bölümü -->
+        <div class="section-card" style="border-left: 5px solid #673ab7;">
+            <h2>📝 Ödev & Fotoğraf Gönderim Kuralları</h2>
+            <p style="margin-bottom: 5px; font-weight: bold; color: #e74c3c;">Lütfen dosya yüklemeden önce aşağıdaki kurallara kesinlikle uyunuz:</p>
+            <ul class="rules-list">
+                <li>👤 Formun ilgili alanlarına <strong>isminizi, soyisminizi ve okul numaranızı</strong> eksiksiz giriniz.</li>
+                <li>🎯 Yüklediğiniz fotoğraf veya PDF'lerde <strong>okul numaranız her resmin tam ortasında, belirgin ve okunaklı bir şekilde</strong> yazılı olmalıdır.</li>
+            </ul>
+        </div>
+
+        <!-- Ders Notları ve Gönderim Bölümü -->
         <div class="section-card">
-            <h2>📚 <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank">2026-2027 Ders Notları</a></h2>
+            <h2>📚 <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank">2025-2026 Ders Notları ve Alanlar</a></h2>
             
+            <!-- Her Sınıf İçin İkili Buton Yapısı -->
             <div class="class-grid">
-                <a href="https://drive.google.com/drive/folders/1gOj4aEaiDER4fa35042ECjNfAD1iLsJW?usp=drive_link" target="_blank" class="class-box">📁 9. Sınıf</a>
-                <a href="https://drive.google.com/drive/folders/1VUh4SsCgsWXh48u7juRSKCBmGd12R4kW?usp=drive_link" target="_blank" class="class-box">📁 10. Sınıf</a>
-                <a href="https://drive.google.com/drive/folders/1_l1A0zp1AhRk8pl50aLBT2GVgXWmcPka?usp=drive_link" target="_blank" class="class-box">📁 11. Sınıf</a>
-                <a href="https://drive.google.com/drive/folders/1OUm9S7T5IeuhR9GpZNyAfNKpRm2zLwJN?usp=drive_link" target="_blank" class="class-box">📁 12. Sınıf</a>
+                
+                <!-- 9. Sınıf -->
+                <div class="class-card-box">
+                    <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">9. Sınıf</span>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
+                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                </div>
+
+                <!-- 10. Sınıf -->
+                <div class="class-card-box">
+                    <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">10. Sınıf</span>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
+                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                </div>
+
+                <!-- 11. Sınıf -->
+                <div class="class-card-box">
+                    <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">11. Sınıf</span>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
+                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                </div>
+
+                <!-- 12. Sınıf -->
+                <div class="class-card-box">
+                    <span style="font-weight: bold; font-size: 18px; color: #2c3e50;">12. Sınıf</span>
+                    <a href="https://drive.google.com/drive/folders/1sIcm8dz4nM8ikS0jTIqeI6DrVyV60Pyl?usp=sharing" target="_blank" class="folder-btn">📁 Ders Notları</a>
+                    <a href="https://forms.gle/LNViZ65fwukJd76v7" target="_blank" class="form-btn">💜 Fotoğraf / Dosya Gönder</a>
+                </div>
+
             </div>
         </div>
 
     </div>
 
+    <!-- Sayfa Alt Bilgisi -->
     <footer>
         <p>&copy; 2026 - Ders Paylaşım Platformu | Tüm Hakları Saklıdır.</p>
     </footer>
